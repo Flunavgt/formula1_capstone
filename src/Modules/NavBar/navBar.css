@@ -1,0 +1,31 @@
+.navs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 10px 0;
+  border-bottom: 4px solid black;
+  background-color:  #FF1801;
+}
+
+h1 {
+  padding-left: 20px;
+  font-size: 3rem;
+}
+
+.NavBar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.NavBar > img {
+  width: 80px;
+}
+
+.Links {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}

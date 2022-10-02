@@ -5,6 +5,7 @@ import Home from './Modules/HomePage';
 import './App.css';
 import Drivers from './Modules/Drivers/Drivers';
 import Circuits from './Modules/Circuits/Circuits';
+import DriverStandings from './Modules/DriverStandings/DriverStandings';
 
 const App = () => (
   <BrowserRouter>
@@ -14,6 +15,7 @@ const App = () => (
       <Route path="/Home" element={<Home />} />
       <Route path="/Drivers" element={<Drivers />} />
       <Route path="/Circuits" element={<Circuits />} />
+      <Route path="/DriverStandings" element={<DriverStandings />} />
     </Routes>
   </BrowserRouter>
 );
