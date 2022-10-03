@@ -1,5 +1,6 @@
 // import React from 'react';
 import { useEffect } from 'react';
+import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
 import { getDStandings } from '../../Redux/DriverStandings';
 
@@ -8,11 +9,11 @@ const DriverStandings = () => {
   const dStandingsData = useSelector((state) => state.dStandings);
   useEffect(() => {
     if (!dStandingsData.length) {
-      dispatch(getDStandings[0]());
+      dispatch(getDStandings());
     }
   });
-  console.log(dStandingsData[0].Driver.givenName);
-  console.log(dStandingsData[0].points);
+  // console.log(dStandingsData.Driver.givenName);
+  // console.log(dStandingsData.points);
   // const pepe = dStandingsData[0].Driver.givenName;
   // const pepa = dStandingsData[0].Driver.familyName;
   const pipo = dStandingsData;
@@ -21,7 +22,7 @@ const DriverStandings = () => {
   // const titi = dStandingsData[0].Constructors[0].name;
   return (
     <div>
-      <table>
+      <Table striped bordered hover size="sm" className="mt-4 mx-auto w-75">
         <thead>
           <tr>
             <th>Pilot</th>
@@ -45,7 +46,7 @@ const DriverStandings = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </Table>
     </div>
   );
 };
