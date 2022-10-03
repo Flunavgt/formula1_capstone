@@ -23,5 +23,4 @@ const imagesPool = [
   'images/Drivers/zhou_front.png',
 ];
 
-// eslint-disable-next-line import/prefer-default-export
-export { imagesPool };
+export default imagesPool;

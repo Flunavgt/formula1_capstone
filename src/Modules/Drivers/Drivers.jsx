@@ -1,37 +1,36 @@
 // import PropTypes from 'prop-types';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { nanoid } from '@reduxjs/toolkit';
 import { getDrivers } from '../../Redux/driversReducers';
-import { imagesPool } from './driverimg';
+import imagesPool from './driverimg';
+
 import './Drivers.css';
-// import albon from '../../app/Resources/Drivers/albon_front.png';
 
 // const fefe = 'https://www.formula1.com/content/fom-website/en/drivers/alexander-albon/jcr:content/image.img.2048.medium.jpg/1646750995556.jpg';
 
-// const imagesPool = [
-//   'images/Drivers/albon_front.png',
-//   'images/Drivers/alonso_front.png',
-//   'images/Drivers/bottas_front.png',
-//   'images/Drivers/de_vries_front.png',
-//   'images/Drivers/gasly_front.png',
-//   'images/Drivers/hamilton_front.png',
-//   'images/Drivers/hulkenberg_front.png',
-//   'images/Drivers/latifi_front.png',
-//   'images/Drivers/leclerc_front.png',
-//   'images/Drivers/kevin_magnussen_front.png',
-//   'images/Drivers/norris_front.png',
-//   'images/Drivers/ocon_front.png',
-//   'images/Drivers/perez_front.png',
-//   'images/Drivers/ricciardo_front.png',
-//   'images/Drivers/russell_front.png',
-//   'images/Drivers/sainz_front.png',
-//   'images/Drivers/mick_schumacher_front.png',
-//   'images/Drivers/stroll_front.png',
-//   'images/Drivers/tsunoda_front.png',
-//   'images/Drivers/max_verstappen_front.png',
-//   'images/Drivers/vettel_front.png',
-//   'images/Drivers/zhou_front.png',
-// ];
+const options = [
+  {
+    label: '2022',
+    value: '2022',
+  },
+  {
+    label: '2021',
+    value: '2021',
+  },
+  {
+    label: '2020',
+    value: '2020',
+  },
+  {
+    label: '2019',
+    value: '2019',
+  },
+  {
+    label: '2018',
+    value: '2018',
+  },
+];
 
 const Drivers = () => {
   const dispatch = useDispatch();
@@ -41,22 +40,48 @@ const Drivers = () => {
       dispatch(getDrivers());
     }
   });
+  const [value, setValue] = useState('2022');
+  const handleSelect = (e) => {
+    setValue(e.target.value);
+    dispatch(getDrivers(e.target.value));
+  };
   return (
     <div className="driverslist">
+      <div>
+        <h3>Pilot&apos;s list by year:</h3>
+        <select value={value} onChange={handleSelect}>
+          {options.map(
+            (option) => (
+              <option key={nanoid()} value={option.value}>
+                {option.label}
+              </option>
+            ),
+          )}
+        </select>
+      </div>
       {driversData.map((driversData, index) => (
-        <div key={driversData.driverId}>
-          <img
-            key={imagesPool[index]}
-            src={imagesPool[index]}
-            alt={imagesPool[index]}
-          />
+        <div key={driversData.driverId} className="eachDriver">
+          <h6>{driversData.givenName}</h6>
+          <h2>{driversData.familyName}</h2>
+          {value === '2022' && (
+            <img
+              key={imagesPool[index]}
+              src={imagesPool[index]}
+              alt={imagesPool[index]}
+            />
+          )}
           <p>
-            {driversData.givenName}
-            {driversData.familyName}
+            <span>Nationality: </span>
+            {driversData.nationality}
           </p>
-          <p>{driversData.nationality}</p>
-          <p>{driversData.dateOfBirth}</p>
-          <a href={driversData.url}>Wikipedia </a>
+          <p>
+            Birthday:
+            {driversData.dateOfBirth}
+          </p>
+          <a href={driversData.url}>
+            {driversData.familyName}
+            &apos;s Wikipedia
+          </a>
         </div>
       ))}
     </div>

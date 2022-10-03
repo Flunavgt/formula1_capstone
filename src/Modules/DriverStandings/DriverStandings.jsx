@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
 import { getDStandings } from '../../Redux/DriverStandings';
+import './dStandings.css';
 
 const DriverStandings = () => {
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ const DriverStandings = () => {
   // const fufu = dStandingsData[0].points;
   // const titi = dStandingsData[0].Constructors[0].name;
   return (
-    <div>
+    <div className="dStandingList">
       <Table striped bordered hover size="sm" className="mt-4 mx-auto w-75">
         <thead>
           <tr>

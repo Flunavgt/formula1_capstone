@@ -23,5 +23,4 @@ const imagesPool2 = [
   'images/circuits/zandvoort.png',
 ];
 
-// eslint-disable-next-line import/prefer-default-export
-export { imagesPool2 };
+export default imagesPool2;

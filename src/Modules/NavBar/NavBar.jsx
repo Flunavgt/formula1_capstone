@@ -9,7 +9,7 @@ const NavBar = () => (
     </div>
     <div className="Links">
       <NavLink to="/" className="home">My Home</NavLink>
-      <NavLink to="/Drivers" className="drivers">Drivers</NavLink>
+      <NavLink to="/Drivers" className="driversl">Drivers</NavLink>
       <NavLink to="/Circuits" className="circuits">Circuits</NavLink>
       <NavLink to="/DriverStandings" className="dstandings">Driver Standings</NavLink>
     </div>
