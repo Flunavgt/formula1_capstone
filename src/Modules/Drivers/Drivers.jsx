@@ -4,33 +4,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
 import { getDrivers } from '../../Redux/driversReducers';
 import imagesPool from './driverimg';
+import options from './years';
 
 import './Drivers.css';
 
 // const fefe = 'https://www.formula1.com/content/fom-website/en/drivers/alexander-albon/jcr:content/image.img.2048.medium.jpg/1646750995556.jpg';
-
-const options = [
-  {
-    label: '2022',
-    value: '2022',
-  },
-  {
-    label: '2021',
-    value: '2021',
-  },
-  {
-    label: '2020',
-    value: '2020',
-  },
-  {
-    label: '2019',
-    value: '2019',
-  },
-  {
-    label: '2018',
-    value: '2018',
-  },
-];
 
 const Drivers = () => {
   const dispatch = useDispatch();
@@ -46,45 +24,47 @@ const Drivers = () => {
     dispatch(getDrivers(e.target.value));
   };
   return (
-    <div className="driverslist">
-      <div>
+    <>
+      <div className="driverslist">
         <h3>Pilot&apos;s list by year:</h3>
-        <select value={value} onChange={handleSelect}>
+        <select value={value} onChange={handleSelect} className="yearsel">
           {options.map(
             (option) => (
               <option key={nanoid()} value={option.value}>
-                {option.label}
+                {option.value}
               </option>
             ),
           )}
         </select>
       </div>
-      {driversData.map((driversData, index) => (
-        <div key={driversData.driverId} className="eachDriver">
-          <h6>{driversData.givenName}</h6>
-          <h2>{driversData.familyName}</h2>
-          {value === '2022' && (
-            <img
-              key={imagesPool[index]}
-              src={imagesPool[index]}
-              alt={imagesPool[index]}
-            />
-          )}
-          <p>
-            <span>Nationality: </span>
-            {driversData.nationality}
-          </p>
-          <p>
-            Birthday:
-            {driversData.dateOfBirth}
-          </p>
-          <a href={driversData.url}>
-            {driversData.familyName}
-            &apos;s Wikipedia
-          </a>
-        </div>
-      ))}
-    </div>
+      <div className="gege">
+        {driversData.map((driversData, index) => (
+          <div key={driversData.driverId} className="eachDriver">
+            <h6>{driversData.givenName}</h6>
+            <h2>{driversData.familyName}</h2>
+            {value === '2022' && (
+              <img
+                key={imagesPool[index]}
+                src={imagesPool[index]}
+                alt={imagesPool[index]}
+              />
+            )}
+            <p>
+              <span>Nationality: </span>
+              {driversData.nationality}
+            </p>
+            <p>
+              Birthday:
+              {driversData.dateOfBirth}
+            </p>
+            <a href={driversData.url}>
+              {driversData.familyName}
+              &apos;s Wikipedia
+            </a>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 

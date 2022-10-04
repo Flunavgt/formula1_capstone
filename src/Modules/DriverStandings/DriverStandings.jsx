@@ -29,8 +29,8 @@ const DriverStandings = () => {
             <th>Pilot</th>
             <th>Position</th>
             <th>Points</th>
-            <th>Wins</th>
-            <th>Constructor</th>
+            {/* <th>Wins</th>
+            <th>Constructor</th> */}
           </tr>
         </thead>
         <tbody>
@@ -42,8 +42,8 @@ const DriverStandings = () => {
               </td>
               <td>{standP.position}</td>
               <td>{standP.points}</td>
-              <td>{standP.wins}</td>
-              <td>{standP.Constructors[0].name}</td>
+              {/* <td>{standP.wins}</td>
+              <td>{standP.Constructors[0].name}</td> */}
             </tr>
           ))}
         </tbody>
