@@ -13,14 +13,7 @@ const DriverStandings = () => {
       dispatch(getDStandings());
     }
   });
-  // console.log(dStandingsData.Driver.givenName);
-  // console.log(dStandingsData.points);
-  // const pepe = dStandingsData[0].Driver.givenName;
-  // const pepa = dStandingsData[0].Driver.familyName;
   const pipo = dStandingsData;
-  // const fifi = dStandingsData[0].position;
-  // const fufu = dStandingsData[0].points;
-  // const titi = dStandingsData[0].Constructors[0].name;
   return (
     <div className="dStandingList">
       <Table striped bordered hover size="sm" className="mt-4 mx-auto w-75">
@@ -40,8 +33,8 @@ const DriverStandings = () => {
                 {standP.Driver.givenName}
                 {standP.Driver.familyName}
               </td>
-              <td>{standP.position}</td>
-              <td>{standP.points}</td>
+              <td className="centerInfo">{standP.position}</td>
+              <td className="centerInfo">{standP.points}</td>
               {/* <td>{standP.wins}</td>
               <td>{standP.Constructors[0].name}</td> */}
             </tr>

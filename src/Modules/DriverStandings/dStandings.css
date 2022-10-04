@@ -1,3 +1,19 @@
 .dStandingList {
-  margin-top: 100px;
+  margin-top: 80px;
+  padding-top: 20px;
+  background-color: azure;
+  height: 100%;
+}
+
+.centerInfo {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .dStandingList {
+    width: 60vw;
+    margin-inline: 20vw;
+    margin-top: 12%;
+    border-radius: 15px;
+  }
 }

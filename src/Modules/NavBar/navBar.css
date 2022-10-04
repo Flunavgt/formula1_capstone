@@ -8,6 +8,7 @@
   background-color:  #FF1801;
   position: fixed;
   top: 0;
+  z-index: 3;
 }
 
 h1 {

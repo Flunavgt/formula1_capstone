@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Home() {
-  return (
-    <div>HomePage</div>
-  );
-}
+const Home = () => (
+  <div className="wapper">
+    <img src="images/Cars/ferrari.png" alt="ferrari car" className="car" />
+  </div>
+
+);
 
 export default Home;
