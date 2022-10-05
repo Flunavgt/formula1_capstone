@@ -7,42 +7,13 @@
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-} */
-
-/* .App-header {
-  min-height: 100vh;
+.home2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-} */
-
-/* .App-link {
-  color: rgb(112, 76, 182);
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} */
-
+.otherLinkH {
+  width: 50vw;
+}
 .wrapper {
   position: relative;
   overflow: hidden;
@@ -60,7 +31,12 @@
   -webkit-animation-delay: 1s;
   animation: slide 1.2s forwards;
   animation-delay: 1s;
-  bottom: 15%;
+  bottom: 5%;
+}
+
+.drLinkH {
+  margin-top: 105px;
+  width: 100vw;
 }
 
 @-webkit-keyframes slide {
@@ -71,5 +47,24 @@
   100% { left: 20vw; }
 }
 
+@media (min-width: 768px) {
+  .car {
+    width: 450px;
+    bottom: 1%;
+  }
 
+  @-webkit-keyframes slide {
+    100% { left: 40vw; }
+  }
+  
+  @keyframes slide {
+    100% { left: 40vw; }
+  }
+
+  .drLinkH {
+    margin-top: 105px;
+    width: 30vw;
+  }
+
+}
 

@@ -29,7 +29,9 @@ h1 {
 .Links {
   display: flex;
   gap: 20px;
-  margin-right: 140px;
+  margin-right: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home,
@@ -37,4 +39,24 @@ h1 {
 .circuits,
 .dstandings {
   color: white;
+}
+
+.icons {
+  font-size: 2rem;
+}
+
+.home {
+  font-size: 3rem;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.driversl,
+.circuits,
+.dstandings {
+  font-size: 10px;
+}
+
+.testing321 {
+  padding-top: 150px;
 }

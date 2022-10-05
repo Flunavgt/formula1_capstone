@@ -1,23 +1,17 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
+import { Link } from 'react-router-dom';
 import { getDrivers } from '../../Redux/driversReducers';
 import imagesPool from './driverimg';
 import options from './years';
 
 import './Drivers.css';
 
-// const fefe = 'https://www.formula1.com/content/fom-website/en/drivers/alexander-albon/jcr:content/image.img.2048.medium.jpg/1646750995556.jpg';
-
-const Drivers = () => {
+const Drivernew = (props) => {
+  const { dato } = props;
   const dispatch = useDispatch();
-  const driversData = useSelector((state) => state.driver);
-  useEffect(() => {
-    if (!driversData.length) {
-      dispatch(getDrivers());
-    }
-  });
   const [value, setValue] = useState('2022');
   const handleSelect = (e) => {
     setValue(e.target.value);
@@ -38,32 +32,61 @@ const Drivers = () => {
         </select>
       </div>
       <div className="gege">
-        {driversData.map((driversData, index) => (
-          <div key={driversData.driverId} className="eachDriver">
-            <h6>{driversData.givenName}</h6>
-            <h2>{driversData.familyName}</h2>
-            {value === '2022' && (
-              <img
-                key={imagesPool[index]}
-                src={imagesPool[index]}
-                alt={imagesPool[index]}
-              />
-            )}
-            <p>
-              <span>Nationality: </span>
-              {driversData.nationality}
-            </p>
-            <p>
-              Birthday:
-              {driversData.dateOfBirth}
-            </p>
-            <a href={driversData.url}>
-              {driversData.familyName}
-              &apos;s Wikipedia
-            </a>
-          </div>
+        {dato.map((data, index) => (
+          <Link to="/Details" key={data.driverId} state={{ state: data }}>
+            <div className="eachDriver">
+              <h6>{data.givenName}</h6>
+              <h2>{data.familyName}</h2>
+              {value === '2022' && (
+                <img
+                  key={imagesPool[index]}
+                  src={imagesPool[index]}
+                  alt={imagesPool[index]}
+                />
+              )}
+              <p>
+                <span>Nationality: </span>
+                {data.nationality}
+              </p>
+              <p>
+                Birthday:
+                {data.dateOfBirth}
+              </p>
+              {/* <a href={data.url}>
+                {data.familyName}
+                &apos;s Wikipedia
+              </a> */}
+            </div>
+          </Link>
         ))}
       </div>
+    </>
+  );
+};
+
+Drivernew.propTypes = {
+  dato: PropTypes.arrayOf(PropTypes.shape({
+    driverId: PropTypes.node,
+    givenName: PropTypes.node,
+    familyName: PropTypes.node,
+    nationality: PropTypes.node,
+    dateOfBirth: PropTypes.node,
+    url: PropTypes.node,
+    map: PropTypes.node,
+  })).isRequired,
+};
+
+const Drivers = () => {
+  const dispatch = useDispatch();
+  const driversData = useSelector((state) => state.driver);
+  useEffect(() => {
+    if (!driversData.length) {
+      dispatch(getDrivers());
+    }
+  });
+  return (
+    <>
+      <Drivernew dato={driversData} />
     </>
   );
 };

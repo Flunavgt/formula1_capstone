@@ -24,10 +24,3 @@ const dStandingsSlice = createSlice({
 const { actions, reducer } = dStandingsSlice;
 export { actions, getDStandings };
 export default reducer;
-
-// const dStandingsState = (state) => state.dStandings;
-
-// export {
-//   fetchDStandings, dStandingsState,
-// };
-// export default dStandingsSlice.reducer;
