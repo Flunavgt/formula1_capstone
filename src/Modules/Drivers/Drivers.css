@@ -1,22 +1,16 @@
 body {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(253,29,29,1) 67%);
-  /* background: black;
-  background: linear-gradient(0deg, black 24%, rgba(255,24,1,1) 100%); */
-  /* background: linear-gradient(#FF1801, black); */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 25%, rgba(253, 29, 29, 1) 67%);
   background-attachment: fixed;
 }
 
 .driverslist {
   margin-top: 110px;
   display: flex;
-  /* flex-direction: row; */
   width: 80vw;
   margin-inline: 10vw;
-  /* height: 90vh; */
   flex-wrap: wrap;
   justify-content: space-between;
-  /* border: 1px solid #000; */
   margin-bottom: 1rem;
 }
 
@@ -32,7 +26,7 @@ body {
   justify-content: space-between;
 }
 
-.yearsel{
+.yearsel {
   height: 2rem;
 }
 
@@ -45,7 +39,7 @@ body {
   margin-bottom: 45px;
 }
 
-.eachDriver img{
+.eachDriver img {
   width: 150px;
   margin-inline: 25%;
   margin-bottom: 10px;
@@ -61,7 +55,6 @@ body {
   padding-left: 10px;
 }
 
-
 h6 {
   margin: 10px 0 0 0;
   padding: 0;
@@ -74,4 +67,3 @@ h2 {
   line-height: 1rem !important;
   color: black;
 }
-

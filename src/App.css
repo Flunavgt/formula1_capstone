@@ -19,7 +19,7 @@
   position: relative;
   overflow: hidden;
   width: 600px;
-  height: 370px; 
+  height: 370px;
   border: 1px solid black;
 }
 
@@ -27,7 +27,6 @@
   position: absolute;
   left: -600px;
   width: 250px;
-  /* height: 370px; */
   -webkit-animation: slide 1.2s forwards;
   -webkit-animation-delay: 1s;
   animation: slide 1.2s forwards;
@@ -47,22 +46,6 @@
   color: white;
 }
 
-/* .standTitle {
-  position: absolute;
-  bottom: 23.5%;
-  left: 8%;
-  font-size: 1rem;
-  color: black;
-}
-
-.circuitTitle {
-  position: absolute;
-  left: 64%;
-  bottom: 23.5%;
-  font-size: 1rem;
-  color: black;
-} */
-
 @-webkit-keyframes slide {
   100% { left: 20vw; }
 }
@@ -80,7 +63,7 @@
   @-webkit-keyframes slide {
     100% { left: 35vw; }
   }
-  
+
   @keyframes slide {
     100% { left: 35vw; }
   }
@@ -90,6 +73,7 @@
     width: 60vw;
     height: 45vh;
   }
+
   .otherLinkH {
     width: 30vw;
   }
@@ -118,6 +102,4 @@
     bottom: 21.5%;
     color: red;
   }
-
 }
-
