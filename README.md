@@ -2,12 +2,20 @@
 
 # Formula 1 2022
 
-> SPA containing information about 2022 season 
+> SPA containing information about 2022 season, where you can find past season pilots, statistics and Circuits.
+
+![coverPage](https://user-images.githubusercontent.com/99816838/194368198-e0d2d003-1bed-43b7-8bd9-a389afbe18f2.png)
+
 
 
 ## Built With
 
 - React/Redux
+
+
+## Live Version
+
+[Formula 1](https://preeminent-sable-64e23f.netlify.app)
 
 
 ## Getting Started
@@ -20,6 +28,12 @@ Clone this repository: https://github.com/Flunavgt/formula1_capstone.git
 Install dependencies with: "npm i"
 
 run on local server with: "npm start"
+
+
+## Ackowledgments
+
+  * To [Nelson Sakwa](https://www.behance.net/sakwadesignstudio), Original design.
+
 
 
 
