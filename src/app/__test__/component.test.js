@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Circuits from '../../Modules/Circuits/Circuits';
 import Drivers from '../../Modules/Drivers/Drivers';
 import DriverStandings from '../../Modules/DriverStandings/DriverStandings';
-import { store } from '../../Redux/store';
+import store from '../../Redux/store';
 
 describe('Rocket components', () => {
   it('Render component', () => {
