@@ -11,18 +11,20 @@ function Details() {
   const dispatch = useDispatch();
   const namdr = state.state.driverId;
   const statsData = useSelector((state) => state.stats);
-  console.log(statsData);
+  // console.log(statsData);
   useEffect(() => {
     if (statsData.length === 0) {
+      dispatch(getStats(namdr));
+    } if (statsData.length > 1) {
       dispatch(getStats(namdr));
     }
     // return () => {
     //   dispatch(actions.clear());
     // };
   });
-  console.log(statsData);
   return (
     <div className="dStandingList">
+      <h1 className="tableTitle">2022 Stats</h1>
       <Table striped bordered hover size="sm" className="mt-4 mx-auto w-75">
         <thead>
           <tr>
@@ -40,7 +42,7 @@ function Details() {
                 <tr key={nanoid()}>
                   <td>{stat.Circuit.circuitName}</td>
                   <td className="centerInfo">{stat.Results[0].position}</td>
-                  <td className="centerInfo">{stat.round}</td>
+                  <td className="centerInfo">{stat.Results[0].points}</td>
                 </tr>
               )
             ),

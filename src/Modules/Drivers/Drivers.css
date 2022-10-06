@@ -42,17 +42,23 @@ body {
   border-radius: 0 15px 0 15px;
   border-bottom: none;
   border-left: none;
-  /* background-color: #FF1801; */
   margin-bottom: 45px;
 }
 
 .eachDriver img{
   width: 150px;
   margin-inline: 25%;
+  margin-bottom: 10px;
 }
 
 .eachDriver p {
   margin-bottom: 0;
+  color: black;
+  text-align: center;
+}
+
+.infoDr {
+  padding-left: 10px;
 }
 
 
@@ -68,3 +74,4 @@ h2 {
   line-height: 1rem !important;
   color: black;
 }
+

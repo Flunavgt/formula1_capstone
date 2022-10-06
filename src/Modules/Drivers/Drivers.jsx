@@ -33,7 +33,7 @@ const Drivernew = (props) => {
       </div>
       <div className="gege">
         {dato.map((data, index) => (
-          <Link to="/Details" key={data.driverId} state={{ state: data }}>
+          <Link to="/Details" style={{ textDecoration: 'none' }} key={data.driverId} state={{ state: data }}>
             <div className="eachDriver">
               <h6>{data.givenName}</h6>
               <h2>{data.familyName}</h2>
@@ -45,17 +45,13 @@ const Drivernew = (props) => {
                 />
               )}
               <p>
-                <span>Nationality: </span>
-                {data.nationality}
+                Nationality:
+                <span className="infoDr">{data.nationality}</span>
               </p>
               <p>
                 Birthday:
-                {data.dateOfBirth}
+                <span className="infoDr">{data.dateOfBirth}</span>
               </p>
-              {/* <a href={data.url}>
-                {data.familyName}
-                &apos;s Wikipedia
-              </a> */}
             </div>
           </Link>
         ))}
