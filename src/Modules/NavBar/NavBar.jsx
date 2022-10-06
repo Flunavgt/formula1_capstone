@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaHome } from 'react-icons/fa';
 import './navBar.css';
 
 const NavBar = () => (
   <div className="navs">
-    <NavLink to="/" className="home">&#x3c;</NavLink>
+    <NavLink to="/" className="home">{FaHome}</NavLink>
     <div className="NavBar">
       <h1>Formula 1</h1>
       <img src="images/Cars/f1main.png" alt="hformula 1 hemlets" className="mainLogo" />

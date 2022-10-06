@@ -12,6 +12,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 1rem;
+  font-family: 'lato', sans-serif;
 }
 
 .yearFilter {

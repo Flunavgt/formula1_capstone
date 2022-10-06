@@ -45,8 +45,12 @@ h1 {
   font-size: 2rem;
 }
 
+.tableTitle {
+  text-align: center;
+}
+
 .home {
-  font-size: 3rem;
+  font-size: 2rem;
   text-decoration: none;
   margin-left: 10px;
 }

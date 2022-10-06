@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   width: 84vw;
   margin-inline: 8vw;
+  font-family: 'lato', sans-serif;
 }
 
 .card {

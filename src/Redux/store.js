@@ -4,8 +4,7 @@ import circuitsReducers from './CircuitsReducers';
 import dStandingsReducers from './DriverStandings';
 import statsReducers from './stats';
 
-// eslint-disable-next-line import/prefer-default-export
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     driver: driversReducers,
     circuit: circuitsReducers,
@@ -13,3 +12,5 @@ export const store = configureStore({
     stats: statsReducers,
   },
 });
+
+export default store;

@@ -18,9 +18,6 @@ function Details() {
     } if (statsData.length > 1) {
       dispatch(getStats(namdr));
     }
-    // return () => {
-    //   dispatch(actions.clear());
-    // };
   });
   return (
     <div className="dStandingList">
@@ -36,8 +33,6 @@ function Details() {
         <tbody>
           {statsData.map(
             (stat) => (
-              // eslint-disable-next-line no-sequences
-              // console.log(stat),
               (
                 <tr key={nanoid()}>
                   <td>{stat.Circuit.circuitName}</td>
