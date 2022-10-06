@@ -12,7 +12,7 @@ const NavBar = () => (
     <div className="Links">
       <NavLink to="/Drivers" className="driversl">Drivers</NavLink>
       <NavLink to="/Circuits" className="circuits">Circuits</NavLink>
-      <NavLink to="/DriverStandings" className="dstandings">Driver Standings</NavLink>
+      <NavLink to="/DriverStandings" className="dstandings">Standings</NavLink>
     </div>
   </div>
 );
