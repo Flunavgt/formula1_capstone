@@ -7,8 +7,10 @@
   text-align: center;
 }
 
-.home2 {
+.home2,
+.home3 {
   display: flex;
+  position: relative;
 }
 
 .otherLinkH {
@@ -39,10 +41,13 @@
   width: 100vw;
 }
 
+.topImage {
+  position: relative;
+}
+
 .driverTitle {
   position: absolute;
-  left: 35%;
-  bottom: 50%;
+  top: 105px;
   color: white;
 }
 
@@ -84,22 +89,21 @@
 
   .driverTitle {
     position: absolute;
-    left: 45%;
-    bottom: 50%;
+    top: 105px;
     color: white;
   }
 
   .standTitle {
     position: absolute;
-    bottom: 21.5%;
-    left: 25%;
+    bottom: 5px;
+    left: 20px;
     color: black;
   }
 
   .circuitTitle {
     position: absolute;
-    left: 60%;
-    bottom: 21.5%;
+    left: 20px;
+    bottom: 5px;
     color: red;
   }
 }

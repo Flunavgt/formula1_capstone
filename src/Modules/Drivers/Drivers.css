@@ -39,6 +39,10 @@ body {
   margin-bottom: 45px;
 }
 
+.eachDriver:hover {
+  transform: scale(1.1);
+}
+
 .eachDriver img {
   width: 150px;
   margin-inline: 25%;
