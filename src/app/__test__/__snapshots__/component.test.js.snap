@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission components Render component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="driverslist"
+      >
+        <h3>
+          Pilot's list by year:
+        </h3>
+        <select
+          class="yearsel"
+        >
+          <option
+            value="2022"
+          >
+            2022
+          </option>
+          <option
+            value="2021"
+          >
+            2021
+          </option>
+          <option
+            value="2020"
+          >
+            2020
+          </option>
+          <option
+            value="2019"
+          >
+            2019
+          </option>
+          <option
+            value="2018"
+          >
+            2018
+          </option>
+          <option
+            value="2017"
+          >
+            2017
+          </option>
+          <option
+            value="2016"
+          >
+            2016
+          </option>
+          <option
+            value="2015"
+          >
+            2015
+          </option>
+          <option
+            value="2014"
+          >
+            2014
+          </option>
+          <option
+            value="2013"
+          >
+            2013
+          </option>
+          <option
+            value="2012"
+          >
+            2012
+          </option>
+          <option
+            value="2011"
+          >
+            2011
+          </option>
+          <option
+            value="2010"
+          >
+            2010
+          </option>
+          <option
+            value="2009"
+          >
+            2009
+          </option>
+          <option
+            value="2008"
+          >
+            2008
+          </option>
+        </select>
+      </div>
+      <div
+        class="gege"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="driverslist"
+    >
+      <h3>
+        Pilot's list by year:
+      </h3>
+      <select
+        class="yearsel"
+      >
+        <option
+          value="2022"
+        >
+          2022
+        </option>
+        <option
+          value="2021"
+        >
+          2021
+        </option>
+        <option
+          value="2020"
+        >
+          2020
+        </option>
+        <option
+          value="2019"
+        >
+          2019
+        </option>
+        <option
+          value="2018"
+        >
+          2018
+        </option>
+        <option
+          value="2017"
+        >
+          2017
+        </option>
+        <option
+          value="2016"
+        >
+          2016
+        </option>
+        <option
+          value="2015"
+        >
+          2015
+        </option>
+        <option
+          value="2014"
+        >
+          2014
+        </option>
+        <option
+          value="2013"
+        >
+          2013
+        </option>
+        <option
+          value="2012"
+        >
+          2012
+        </option>
+        <option
+          value="2011"
+        >
+          2011
+        </option>
+        <option
+          value="2010"
+        >
+          2010
+        </option>
+        <option
+          value="2009"
+        >
+          2009
+        </option>
+        <option
+          value="2008"
+        >
+          2008
+        </option>
+      </select>
+    </div>
+    <div
+      class="gege"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rocket components Render component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="circuitslist"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="circuitslist"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
