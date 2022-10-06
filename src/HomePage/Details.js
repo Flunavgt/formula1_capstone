@@ -11,7 +11,6 @@ function Details() {
   const dispatch = useDispatch();
   const namdr = state.state.driverId;
   const statsData = useSelector((state) => state.stats);
-  // console.log(statsData);
   useEffect(() => {
     if (statsData.length === 0) {
       dispatch(getStats(namdr));
