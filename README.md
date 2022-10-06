@@ -17,6 +17,10 @@
 
 [Formula 1](https://preeminent-sable-64e23f.netlify.app)
 
+## Loom Video
+
+[Loom Video](https://www.loom.com/share/516443cc5529418d975f8aa602293636)
+
 
 ## Getting Started
 
