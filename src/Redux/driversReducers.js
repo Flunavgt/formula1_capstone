@@ -1,7 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-// const API_URL = `http://ergast.com/api/f1/${value}/drivers.json?`;
-
 const getDrivers = createAsyncThunk('drivers/retrieveDrivers', async (value = '2022') => {
   const response = await fetch(`http://ergast.com/api/f1/${value}/drivers.json?`);
   const driverstList = await response.json();

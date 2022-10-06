@@ -49,37 +49,3 @@ function Details() {
 }
 
 export default Details;
-
-// const Stats = () => {
-//   const dispatch = useDispatch();
-//   const statsData = useSelector((state) => state.stats);
-//   useEffect(() => {
-//     if (!statsData.length) {
-//       dispatch(getStats());
-//     }
-//   });
-//   return (
-//     <div className="dStandingList">
-//       <Table striped bordered hover size="sm" className="mt-4 mx-auto w-75">
-//         <thead>
-//           <tr>
-//             <th>Circuit</th>
-//             <th>Finish</th>
-//             <th>Points</th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {statsData.map((stat) => (
-//             <tr key={nanoid()}>
-//               <td>{stat.raceName}</td>
-//               <td className="centerInfo">{stat.Results[0].position}</td>
-//               <td className="centerInfo">{stat.Results[0].points}</td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </Table>
-//     </div>
-//   );
-// };
-
-// export default Stats;

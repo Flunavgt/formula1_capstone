@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import { getCircuits } from '../../Redux/CircuitsReducers';
 import imagesPool2 from './circuitImg';
 import './circuit.css';
-// const bahrain = 'https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Bahrain_Circuit.png.transform/7col/image.png';
 
 const Circuits = () => {
   const dispatch = useDispatch();
