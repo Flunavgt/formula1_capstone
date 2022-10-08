@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const initialState = [];
 
-const URL_DSTAND = 'http://ergast.com/api/f1/current/driverStandings.json?';
+const URL_DSTAND = 'https://ergast.com/api/f1/current/driverStandings.json?';
 
 const getDStandings = createAsyncThunk('dStandings/getDStandings', async () => {
   const response = await fetch(URL_DSTAND);
