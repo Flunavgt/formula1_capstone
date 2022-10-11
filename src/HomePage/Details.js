@@ -12,12 +12,8 @@ function Details() {
   const namdr = state.state.driverId;
   const statsData = useSelector((state) => state.stats);
   useEffect(() => {
-    if (statsData.length === 0) {
-      dispatch(getStats(namdr));
-    } if (statsData.length > 1) {
-      dispatch(getStats(namdr));
-    }
-  });
+    dispatch(getStats(namdr));
+  }, []);
   return (
     <div className="dStandingList">
       <h1 className="tableTitle">2022 Stats</h1>
