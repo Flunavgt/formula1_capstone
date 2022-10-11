@@ -1,8 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
-import driversReducers  from './driversReducers'
+import driversReducers from './driversReducers';
+import circuitsReducers from './CircuitsReducers';
+import dStandingsReducers from './DriverStandings';
+import statsReducers from './stats';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     driver: driversReducers,
+    circuit: circuitsReducers,
+    dStandings: dStandingsReducers,
+    stats: statsReducers,
   },
 });
+
+export default store;

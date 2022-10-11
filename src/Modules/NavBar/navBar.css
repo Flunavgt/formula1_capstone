@@ -1,0 +1,66 @@
+.navs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 4px solid black;
+  background-color: #ff1801;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+h1 {
+  padding-left: 20px;
+  font-size: 3rem;
+}
+
+.NavBar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.NavBar > img {
+  width: 80px;
+}
+
+.Links {
+  display: flex;
+  gap: 20px;
+  margin-right: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home,
+.driversl,
+.circuits,
+.dstandings {
+  color: white;
+}
+
+.icons {
+  font-size: 2rem;
+}
+
+.tableTitle {
+  text-align: center;
+}
+
+.home {
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.driversl,
+.circuits,
+.dstandings {
+  font-size: 10px;
+}
+
+.testing321 {
+  padding-top: 150px;
+}

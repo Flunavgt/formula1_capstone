@@ -1,0 +1,74 @@
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 25%, rgba(253, 29, 29, 1) 67%);
+  background-attachment: fixed;
+}
+
+.driverslist {
+  margin-top: 110px;
+  display: flex;
+  width: 80vw;
+  margin-inline: 10vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-family: 'lato', sans-serif;
+}
+
+.yearFilter {
+  display: flex;
+}
+
+.gege {
+  display: flex;
+  width: 80vw;
+  margin-inline: 10vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.yearsel {
+  height: 2rem;
+}
+
+.eachDriver {
+  width: 300px;
+  border: 5px solid #000;
+  border-radius: 0 15px 0 15px;
+  border-bottom: none;
+  border-left: none;
+  margin-bottom: 45px;
+}
+
+.eachDriver:hover {
+  transform: scale(1.1);
+}
+
+.eachDriver img {
+  width: 150px;
+  margin-inline: 25%;
+  margin-bottom: 10px;
+}
+
+.eachDriver p {
+  margin-bottom: 0;
+  color: black;
+  text-align: center;
+}
+
+.infoDr {
+  padding-left: 10px;
+}
+
+h6 {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 0.9rem !important;
+  color: rgb(186, 188, 190);
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1rem !important;
+  color: black;
+}

@@ -1,0 +1,33 @@
+
+.circuitslist {
+  margin-top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 84vw;
+  margin-inline: 8vw;
+  font-family: 'lato', sans-serif;
+}
+
+.card {
+  background-color: transparent !important;
+  z-index: 1;
+  margin-bottom: 4.5rem;
+  border: none !important;
+}
+
+.card-title {
+  text-align: center;
+  color: black;
+}
+
+.card-text {
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+
+.card-link {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
