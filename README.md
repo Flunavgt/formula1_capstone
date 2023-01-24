@@ -15,7 +15,7 @@
 
 ## Live Version
 
-[Formula 1](https://preeminent-sable-64e23f.netlify.app)
+[Formula 1](https://federico-capstone.netlify.app) 
 
 ## Loom Video
 
